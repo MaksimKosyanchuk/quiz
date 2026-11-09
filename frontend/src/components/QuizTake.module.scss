@@ -1,0 +1,53 @@
+.question {
+    margin-top: 12px;
+}
+
+.text {
+    margin: 0 0 8px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.options {
+    display: grid;
+    gap: 6px;
+
+    label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
+
+.correct {
+    border-color: #16a34a;
+    background: #f0fdf4;
+}
+
+.wrong {
+    border-color: #dc2626;
+    background: #fef2f2;
+}
+
+.verdict {
+    margin: 8px 0 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.score {
+    margin: 16px 0;
+    text-align: center;
+
+    strong {
+        display: block;
+        font-size: 32px;
+    }
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}

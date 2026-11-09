@@ -1,0 +1,66 @@
+.root {
+    position: relative;
+}
+
+.trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background: #fff;
+    font: inherit;
+    font-weight: 400;
+    text-align: left;
+    cursor: pointer;
+
+    &:focus-visible,
+    &.triggerOpen {
+        outline: 2px solid rgba(#4f46e5, 0.4);
+        border-color: #4f46e5;
+    }
+}
+
+.chevron {
+    flex-shrink: 0;
+    color: #6b7280;
+    transition: transform 0.15s;
+}
+
+.triggerOpen .chevron {
+    transform: rotate(180deg);
+}
+
+.list {
+    position: absolute;
+    z-index: 10;
+    top: calc(100% + 4px);
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 4px;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.option {
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.optionActive {
+    background: #f3f4f6;
+}
+
+.optionSelected {
+    color: #4338ca;
+    font-weight: 600;
+}

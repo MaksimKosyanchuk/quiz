@@ -1,0 +1,21 @@
+.form {
+    display: grid;
+    gap: 16px;
+    max-width: 400px;
+    margin: 24px auto 0;
+
+    h1 {
+        margin: 0;
+    }
+
+    a {
+        color: #4f46e5;
+        text-decoration: underline;
+    }
+}
+
+.field {
+    display: grid;
+    gap: 6px;
+    font-weight: 600;
+}

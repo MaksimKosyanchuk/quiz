@@ -1,0 +1,30 @@
+.question {
+    margin-top: 12px;
+}
+
+.type {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 999px;
+    background: #eef2ff;
+    color: #4338ca;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.text {
+    margin: 8px 0;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.options {
+    display: grid;
+    gap: 6px;
+
+    label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+}
